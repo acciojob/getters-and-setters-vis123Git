@@ -3,6 +3,14 @@ class Person {
     this.name = name;
     this.age = age;
   }
+
+	getName(){
+		return this.name;
+	}
+
+		setAge(age){
+		return this.age = age;
+	}
 }
 
 class Student extends Person {
