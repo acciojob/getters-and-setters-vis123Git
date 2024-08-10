@@ -4,17 +4,17 @@ class Person {
     this.age = age;
   }
 
-	_name(){
-		return this.name;
-	}
+  getName() {
+    return this.name;
+  }
 
-		setAge(age){
-		return this.age = age;
-	}
+  setAge(age) {
+    this.age = age;
+  }
 }
 
 class Student extends Person {
-   constructor(name, age) {
+  constructor(name, age) {
     super(name, age);
   }
 	
@@ -32,7 +32,9 @@ class Teacher extends Person {
     console.log(`${this.name} is teaching`);
   }
 }
+
 const person = new Person("John", 30);
+
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
